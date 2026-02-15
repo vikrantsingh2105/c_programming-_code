@@ -3,5 +3,8 @@
 
 int main(){
     struct book
+    {
+        char
+    }
     return 0;
 }
