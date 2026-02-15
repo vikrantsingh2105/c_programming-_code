@@ -8,6 +8,6 @@ int main(){
     };
     struct book b1,b2,b3;
 
-    printf("enetr name,price")
+    printf("enetr name,price & no of pages")
     return 0;
 }
