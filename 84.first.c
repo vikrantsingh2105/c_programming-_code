@@ -2,6 +2,6 @@
 #include<stdio.h>
 
 int main(){
-    
+    struct book
     return 0;
 }
