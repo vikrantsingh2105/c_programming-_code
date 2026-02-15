@@ -1,1 +1,1 @@
-//struc
+//structure 
