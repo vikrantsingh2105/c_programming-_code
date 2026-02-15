@@ -1,1 +1,1 @@
-//structure for books name,
+//structure for books name,price and no of pages 
