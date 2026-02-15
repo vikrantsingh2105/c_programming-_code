@@ -2,7 +2,7 @@ import subprocess
 import os
 import time
 
-repo_path = r"C:\Users\Manish Pandey\Desktop\SU\CSCR1503-Python-Application-Programming"
+repo_path = "/Users/vikrantsingh/hello.c"
 
 while True:
     os.chdir(repo_path)
