@@ -7,6 +7,7 @@ int main(){
         char name[50];float price;int pages;
     };
     struct book b1,b2,b3;
-    
+
+    pirntf
     return 0;
 }
