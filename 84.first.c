@@ -14,7 +14,7 @@ int main(){
     scanf(" %c %f %d",&b3.name,&b3.price,&b3.pages);
     printf("and thisis what u enetered\n");
     printf(" %c %f %d",&b3.name,&b3.price,&b3.pages);
-    scanf(" %c %f %d",&b3.name,&b3.price,&b3.pages);
+    printf(" %c %f %d",&b3.name,&b3.price,&b3.pages);
     scanf(" %c %f %d",&b3.name,&b3.price,&b3.pages);
     return 0;
 }
