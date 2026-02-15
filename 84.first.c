@@ -12,6 +12,6 @@ int main(){
     scanf(" %c %f %d",&b1.name,&b1.price,&b1.pages);
     scanf(" %c %f %d",&b2.name,&b2.price,&b2.pages);
     scanf(" %c %f %d",&b3.name,&b3.price,&b3.pages);
-    printf("and this")
+    printf("and thisis what u enetered")
     return 0;
 }
