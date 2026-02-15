@@ -4,7 +4,7 @@
 int main(){
     struct book
     {
-        char
+        char name[50]
     }
     return 0;
 }
