@@ -6,6 +6,7 @@ int main(){
     {
         char name[50];float price;int pages;
     };
-    struct book b1,b2
+    struct book b1,b2,b3;
+    
     return 0;
 }
