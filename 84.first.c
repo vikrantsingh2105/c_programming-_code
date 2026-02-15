@@ -8,6 +8,6 @@ int main(){
     };
     struct book b1,b2,b3;
 
-    pirntf
+    printf("enetr name,price")
     return 0;
 }
