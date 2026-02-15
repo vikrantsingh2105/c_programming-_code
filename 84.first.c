@@ -4,7 +4,7 @@
 int main(){
     struct book
     {
-        char name[50];float price;
-    }
+        char name[50];float price;int pages;
+    };
     return 0;
 }
