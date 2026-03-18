@@ -6,6 +6,7 @@ int strlen(char str[]){
     char c=str[i];
     while(c!=0){
         c=str[i];
+        i++;
     }
 }
 int main(){
