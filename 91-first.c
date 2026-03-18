@@ -12,6 +12,6 @@ int strlen(char str[]){
     return count;
 }
 int main(){
-    char str[]
+    char str[]="harry";
     return 0;
 }
