@@ -3,7 +3,7 @@
 
 int strlen(char str[]){
     int i=0,count;
-    
+    char c=str[]
 }
 int main(){
     
