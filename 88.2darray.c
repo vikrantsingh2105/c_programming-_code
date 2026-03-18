@@ -1,4 +1,4 @@
-// prgram for writing table of 2,3,7 using 2 dimensional array
+// program for writing table of 2,3,7 using 2 dimensional array
 #include<stdio.h>
 
 int main(){
