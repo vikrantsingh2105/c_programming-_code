@@ -8,6 +8,8 @@ int strlen(char str[]){
         c=str[i];
         i++;
     }
+    count=i-1;
+    return count;
     
 }
 int main(){
