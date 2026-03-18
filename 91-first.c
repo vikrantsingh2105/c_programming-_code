@@ -4,7 +4,7 @@
 int strlen(char str[]){
     int i=0,count;
     char c=str[i];
-    while(c!=0){
+    while(c!='\0'){
         c=str[i];
         i++;
     }
@@ -12,7 +12,7 @@ int strlen(char str[]){
     return count;
 }
 int main(){
-    char str[]="harry";
+    char str[]="har";
 
     printf("%d",strlen(str));
     return 0;
