@@ -3,7 +3,8 @@
 
 int strlen(char str[]){
     int i=0,count;
-    char c=str[]
+    char c=str[i];
+    while(c)
 }
 int main(){
     
