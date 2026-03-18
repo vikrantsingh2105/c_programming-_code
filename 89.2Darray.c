@@ -3,7 +3,8 @@
 
 int main(){
     int n1,n2,n3;
-    printf("ene")
+    printf("enter 3 tables you want to write:");
+    scanf
     int a[3][10];
     int mul[]={2,3,7};
 
