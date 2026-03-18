@@ -2,7 +2,8 @@
 #include<stdio.h>
 
 int strlen(char str[]){
-    int i=0
+    int i=0,count;
+    
 }
 int main(){
     
