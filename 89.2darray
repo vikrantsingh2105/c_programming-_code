@@ -3,6 +3,7 @@
 
 int main(){
     int n1,n2,n3;
+    scanf("5)
     int a[3][10];
     int mul[]={2,3,7};
 
