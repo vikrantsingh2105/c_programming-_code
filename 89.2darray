@@ -1,4 +1,4 @@
-// program for writing table given bt user using 2 dimensional array
+ program for writing table given bt user using 2 dimensional array
 #include<stdio.h>
 
 int main(){
