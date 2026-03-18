@@ -14,6 +14,6 @@ int strlen(char str[]){
 int main(){
     char str[]="harry";
 
-    pritnf("%d",strlen(str));
+    printf("%d",strlen(str));
     return 0;
 }
