@@ -10,7 +10,6 @@ int strlen(char str[]){
     }
     count=i-1;
     return count;
-    
 }
 int main(){
     
