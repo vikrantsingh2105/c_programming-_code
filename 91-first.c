@@ -13,5 +13,7 @@ int strlen(char str[]){
 }
 int main(){
     char str[]="harry";
+
+    pritnf("%d")
     return 0;
 }
