@@ -92,25 +92,31 @@ void insert()
 
     printf("enter the location at where you want to insert new node");
     scanf("%d",&loc);
-
-    if(ROOT==NULL)
+    
+    if(loc <1 && loc>length()
     {
-        ROOT=temp;
-    }
+        printf("out of range");
+    } 
     else
     {
-        struct node*p;
-        p=ROOT;
-        while(i<loc)
+        if(ROOT==NULL)
         {
-            p=p->link;
-            i++;
+            ROOT=temp;
         }
-        temp->link=p->link;
-        p->link=temp;
+        else
+        {
+            struct node*p;
+            p=ROOT;
+            while(i<loc)
+            {
+                p=p->link;
+                i++;
+            }
+            temp->link=p->link;
+            p->link=temp;
 
-    }  
-}
+        }  
+    }
 
 void display()
 {
