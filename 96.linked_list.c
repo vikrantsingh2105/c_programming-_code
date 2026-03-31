@@ -6,6 +6,7 @@ void append();
 void add_begin();
 int length();
 void insert();
+void del();
 void display();
 struct node{
     int data;
@@ -13,14 +14,18 @@ struct node{
 };
 struct node *ROOT=NULL;
 
-void main()
+int main() //in turbo c it should be void
 {
     append();
     append();
     append();
+    display();
     add_begin();
+    display();
     length();
     insert();
+    display();
+    del();
     display();
 }
 
@@ -29,7 +34,7 @@ void append()
     struct node *temp;
     temp=(struct node*)malloc(sizeof(struct node));
 
-    printf("enter the value of node");
+    printf("enter the value of node u wan to append : ");
     scanf("%d",& temp->data);
     temp->link=NULL;
     if(ROOT==NULL)
@@ -53,7 +58,7 @@ void add_begin()
    struct node *temp;
     temp=(struct node*)malloc(sizeof(struct node));
 
-    printf("enter the value of node");
+    printf("enter the value of node u wan to add at beginning : ");
     scanf("%d",& temp->data);
     temp->link=NULL;
     if(ROOT==NULL)
@@ -86,14 +91,14 @@ void insert()
     temp=(struct node*)malloc(sizeof(struct node));
     int loc;
     int i=1;
-    printf("enter the value of node");
+    printf("enter the value of node u want to insert : ");
     scanf("%d",& temp->data);
     temp->link=NULL;
 
-    printf("enter the location at where you want to insert new node");
+    printf("enter the location at where you want to insert new node : ");
     scanf("%d",&loc);
     
-    if(loc <1 && loc>length()
+    if(loc <1 && loc>length())
     {
         printf("out of range");
     } 
@@ -107,7 +112,7 @@ void insert()
         {
             struct node*p;
             p=ROOT;
-            while(i<loc)
+            while(i<loc-1)
             {
                 p=p->link;
                 i++;
@@ -117,17 +122,56 @@ void insert()
 
         }  
     }
+}
+
+void del()
+{
+    int loc;
+    int i=1;
+    struct node*p;
+
+    printf("enter location of node u want to delete: ");
+    scanf("%d",&loc);
+    
+    if(loc<length())
+    {
+        if(loc==1)
+        {
+            p=ROOT;
+            ROOT=ROOT->link;
+            p->link=NULL;
+            free(p);
+        }
+        else
+        {
+            struct node*p,*q;
+            p=ROOT;
+
+            while(i<loc-1)
+            {
+                p=p->link;
+                i++;
+            }
+
+            q=p->link;
+            p->link=q->link;
+            q->link = NULL;
+            free(q);
+        }
+    }
+}
+
 
 void display()
 {
     struct node *p;
     p=ROOT;
-    while(p!=link)
+    while(p!=NULL)
     {
         printf("%d->->",p->data);
         p=p->link;
     }
-
+    printf("\n");
 }
 
 
