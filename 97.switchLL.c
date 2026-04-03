@@ -28,7 +28,7 @@ int main()
     printf("enter 6 for displaying linked list\n");
     printf("enter 7 for exiting linked list\n");
 
-    printf("Enter your choice\n");
+    printf("Enter your choice : ");
     scanf("%d",&ch);
 
     switch(ch)
@@ -125,6 +125,7 @@ int length()
         count++;
         p=p->link;
     }
+    printf("THE LENGTH OF THE LINKED LIST IS %d",count);
     return (count);
 }
 
@@ -140,6 +141,7 @@ void insert()
     temp->link=NULL;
 
     printf("enter location where u want to insert");
+    scanf("%d",&loc);
 
     if(loc<1 && loc>length())
     {
