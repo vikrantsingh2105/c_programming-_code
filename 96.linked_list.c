@@ -27,6 +27,7 @@ int main() //in turbo c it should be void
     display();
     del();
     display();
+
 }
 
 void append()
