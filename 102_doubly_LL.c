@@ -115,6 +115,7 @@ void add_begin()
     }
     else{
         temp->right=ROOT;
+        ROOT->
         ROOT=temp;
     } 
 }
