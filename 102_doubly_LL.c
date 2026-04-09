@@ -149,7 +149,7 @@ void insert()
     if(loc==1)
     {
         temp->right=ROOT;
-        ROOT->
+        ROOT->left
     }
 }
 
