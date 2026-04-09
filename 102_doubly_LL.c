@@ -154,7 +154,8 @@ void insert()
     }
     else
     {
-        struct node*p
+        struct node*p=ROOT,*q;
+        
     }
 }
 
