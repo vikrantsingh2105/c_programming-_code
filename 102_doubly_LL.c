@@ -90,7 +90,7 @@ void append()
     else{
         struct node*p;
         p=ROOT;
-        while(p->link!=NULL)
+        while(p->right!=NULL)
         {
             p=p->link;
         }
