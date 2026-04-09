@@ -147,6 +147,9 @@ void insert()
     temp->right=NULL;
 
     if(loc==1)
+    {
+        temp-
+    }
 }
 
 void del()
