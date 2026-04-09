@@ -143,8 +143,8 @@ void insert()
 
     printf("enter node value u want to insert");
     scanf("%d",&temp->data);
-    temp->link=NULL;
-    temp->lik=NULL;
+    temp->left=NULL;
+    temp->right=NULL;
 
     printf("enter location where u want to insert");
     scanf("%d",&loc);
