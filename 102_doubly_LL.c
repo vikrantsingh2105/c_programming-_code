@@ -146,30 +146,7 @@ void insert()
     temp->left=NULL;
     temp->right=NULL;
 
-    printf("enter location where u want to insert");
-    scanf("%d",&loc);
-
-    if(loc<1 && loc>length())
-    {
-        printf("out of range");
-    }
-    else{
-    if(ROOT==NULL)
-    {
-        ROOT=temp;
-    }
-    else{
-        struct node*p;
-        p=ROOT;
-        while(i<loc-1)
-        {
-            p=p->link;
-            i++;
-        } 
-        temp->link=p->link;
-        p->link=temp;
-    }
-} 
+    
 }
 
 void del()
