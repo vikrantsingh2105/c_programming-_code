@@ -153,6 +153,9 @@ void insert()
         ROOT=temp;
     }
     else
+    {
+        struct node*p
+    }
 }
 
 void del()
