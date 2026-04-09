@@ -106,7 +106,8 @@ void add_begin()
 
     printf("enter node value u want to add at beginning");
     scanf("%d",&temp->data);
-    temp->l=NULL;
+    temp->left=NULL;
+    temp->right=NULL;
 
     if(ROOT==NULL)
     {
