@@ -101,7 +101,7 @@ void append()
 
 void add_begin()
 {
-   struct node*temp;
+    struct node*temp;
     temp=(struct node*)malloc(sizeof(struct node));
 
     printf("enter node value u want to add at beginning");
