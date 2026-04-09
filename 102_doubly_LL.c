@@ -9,7 +9,7 @@ void del();
 void display();
 struct node{
     int data;
-    struct node*link;
+    struct node*left;
 };
 struct node*ROOT=NULL;
 
