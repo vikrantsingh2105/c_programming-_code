@@ -155,7 +155,7 @@ void insert()
     else
     {
         struct node*p=ROOT,*q;
-        
+        while(i<loc-1)
     }
 }
 
