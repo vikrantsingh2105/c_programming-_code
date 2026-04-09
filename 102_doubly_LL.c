@@ -158,7 +158,7 @@ void insert()
         while(i<loc-1)
         {
             p=p->right;
-            i
+            i++;
         }
     }
 }
