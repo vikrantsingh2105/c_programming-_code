@@ -94,7 +94,7 @@ void append()
         {
             p=p->right;
         }
-        p->link=temp;
+        p->right=temp;
     }
 }
 
