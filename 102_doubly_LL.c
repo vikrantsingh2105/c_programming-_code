@@ -92,7 +92,7 @@ void append()
         p=ROOT;
         while(p->right!=NULL)
         {
-            p=p->link;
+            p=p->right;
         }
         p->link=temp;
     }
