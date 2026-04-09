@@ -128,7 +128,7 @@ int length()
     while(p!=NULL)
     {
         count++;
-        p=p->link;
+        p=p->right;
     }
     printf("THE LENGTH OF THE LINKED LIST IS %d",count);
     return (count);
