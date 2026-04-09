@@ -148,7 +148,7 @@ void insert()
 
     if(loc==1)
     {
-        temp-
+        temp->right=ROOT
     }
 }
 
