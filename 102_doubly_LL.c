@@ -95,7 +95,7 @@ void append()
             p=p->right;
         }
         p->right=temp;
-        twm->left=p;
+        temp->left=p;
     }
 }
 
