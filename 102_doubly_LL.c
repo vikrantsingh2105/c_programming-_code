@@ -150,8 +150,9 @@ void insert()
     {
         temp->right=ROOT;
         ROOT->left=temp;
-        ROOT=
+        ROOT=temp;
     }
+    else
 }
 
 void del()
