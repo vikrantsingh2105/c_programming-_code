@@ -160,7 +160,7 @@ void insert()
             p=p->right;
             i++;
         }
-        temp-
+        temp->right=p->right
     }
 }
 
