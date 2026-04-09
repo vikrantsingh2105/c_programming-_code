@@ -80,8 +80,8 @@ void append()
 
     printf("enter node value u want to append");
     scanf("%d",&temp->data);
-    temp->link=NULL;
-    temp->link=NULL;
+    temp->left=NULL;
+    temp->right=NULL;
 
     if(ROOT==NULL)
     {
