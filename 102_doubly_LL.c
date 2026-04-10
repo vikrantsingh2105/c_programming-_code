@@ -130,7 +130,7 @@ int length()
         count++;
         p=p->right;
     }
-    printf("THE LENGTH OF THE LINKED LIST IS %d",count);
+    printf("THE LENGTH OF THE LINKED LIST IS %d\n",count);
     return (count);
 }
 
@@ -146,20 +146,29 @@ void insert()
     temp->left=NULL;
     temp->right=NULL;
 
+    printf("enter at which location u want to insert");
+    scanf("%d",&loc);
+
     if(loc==1)
     {
         temp->right=ROOT;
         ROOT->left=temp;
         ROOT=temp;
     }
+    else if(ROOT==NULL)
+    {
+        ROOT=temp;
+    }
     else
     {
-        struct node*p=ROOT,*q;
+        struct node*p,*q;
+        p=ROOT;
         while(i<loc-1)
         {
             p=p->right;
             i++;
         }
+        q=p->right;
         temp->right=p->right;
         q->left=temp;
         p->right=temp;
@@ -171,7 +180,7 @@ void del()
 {
     int loc;
     int i=1;
-    struct node*p;
+    struct node*p,*q;
 
     printf("enter loc of the node u want to delete");
     scanf("%d",&loc);
@@ -181,24 +190,45 @@ void del()
         if(loc==1)
         {
             p=ROOT;
-            ROOT=ROOT->link;
-            p->link=NULL;
+            ROOT=ROOT->right;
+            q=p->right;
+            q->left=NULL;
+            p->right=NULL;
             free(p);
+        }
+        else if(loc==length())
+        {
+           p=ROOT;
+            while(i<loc-1)
+            {
+                p=p->right;
+                i++;
+            }
+            q=p->right;
+            p->right=NULL;
+            q->left=NULL;
+            free(q); 
         }
         else
         {
-            struct node*p,*q;
+            struct node*r;
             p=ROOT;
             while(i<loc-1)
             {
-                p=p->link;
+                p=p->right;
                 i++;
             }
-            q=p->link;
-            p->link=q->link;
-            q->link=NULL;
+            q=p->right;
+            r=q->right;
+            r->left=p;
+            p->right=r;
+            q->left=NULL;
+            q->right=NULL;
             free(q);
         }
+    }
+    else{
+        printf("linked list is out of index\n");
     }
 }
 
@@ -208,8 +238,8 @@ void display()
     p=ROOT;
     while(p!=NULL)
     {
-        printf("%d->->",p->data);
-        p=p->link;
+        printf("<-<-%d->->",p->data);
+        p=p->right;
     }
     printf("\n");
 }
