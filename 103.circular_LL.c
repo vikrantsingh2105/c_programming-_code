@@ -16,7 +16,7 @@ struct node *tail=NULL;
 
 int main()
 {
- printf("WELCOME TO THE LINKED LIST\n");
+ printf("WELCOME TO THE CIRCULAR SINGLE LINKED LIST\n");
     int n,i;
     int ch;
     while(1)
