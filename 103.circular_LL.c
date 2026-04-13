@@ -172,7 +172,7 @@ void del()
    p->link=NULL;
    free(p);
   }
-  else
+  else if(loc==length())
   {
   p=tail->link;
   while(i<loc-1)
@@ -185,6 +185,18 @@ void del()
   q->link=NULL;
   free(q);
   tail=p;
+  }
+  else{
+    p=tail->link;
+  while(i<loc-1)
+  {
+   p=p->link;
+   i++;
+  }
+  q=p->link;
+  p->link=q->link;
+  q->link=NULL;
+  free(q);
   }
  }
 }
