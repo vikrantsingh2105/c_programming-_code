@@ -17,7 +17,7 @@ struct node*tail=NULL;
 
 int main()
 {
-    printf("WELCOME TO THE DOUBLY LINKED LIST\n");
+    printf("WELCOME TO THE CIRCULAR DOUBLY LINKED LIST\n");
     int n,i;
     int ch;
     while(1)
