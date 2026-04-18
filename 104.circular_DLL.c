@@ -214,7 +214,7 @@ void del()
             }
             q=p->right;
             p->right=q->right;
-            tail->right=p;
+            tail->right->left=p;
             tail=p;
             q->left=NULL;
             q->right=NULL;
